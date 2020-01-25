@@ -1,0 +1,19 @@
+# Ignore Data-intensive, irrelevant folders.
+data/
+Models/
+models/
+mlruns/
+build/
+outputs/
+build/
+__pycache__/
+utils/__pycache__/
+logs/
+Notebooks/logs/
+RecModel/__pycache__/
+RecModel/py_models/__pycache__/
+RecModel/pyx_models/__pycache__/
+RecModel/pyx_models/build/
+.ipynb_checkpoints/
+*.so
+*.c

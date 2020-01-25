@@ -1,0 +1,21 @@
+model:
+    verbose: 0
+    cores: 7
+    seed: None
+    rand_sampled: 1000
+    train_mat_bin_path: data/mat_bin_train.npz
+    train_mat_count_path: data/mat_count_train.npz
+    eval_mat_path: data/mat_bin_validate.npz 
+    batch_size: 20000
+    max_epochs: 200
+    max_epochs_without_improvement: 5
+    n_random_samples: 1
+    model_path: Mult_VAE.torchmodel
+    shutdown: 1
+    max_epochs_without_improvement: 6
+    n_random_samples: 10
+    top_n_performances:
+        - 4
+        - 10
+        - 20
+        - 50

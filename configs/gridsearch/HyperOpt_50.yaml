@@ -1,0 +1,2 @@
+gridsearch:
+    num_evals: 50

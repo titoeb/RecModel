@@ -1,0 +1,3 @@
+defaults:
+    - model: slim
+    - gridsearch: run1
