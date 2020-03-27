@@ -20,8 +20,12 @@ class Slim(RecModel):
 
     def train(self, X, alpha, l1_ratio, max_iter, tolerance, cores, verbose):
         X = X.copy()
+
+        if X.dtype != np.float64:
+            X = X.astype(np.float64)
+
         X_train = X.tocsc()
-        X_train.sort_indices
+        X_train.sort_indices()
         
         self.W_indptr, self.W_idx, self.W_data = train_Slim(X=X_train, alpha=alpha, l1_ratio=l1_ratio, max_iter=max_iter, tol=tolerance, cores=cores, verbose=verbose)
         
