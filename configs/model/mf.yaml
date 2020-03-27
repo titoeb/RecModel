@@ -1,4 +1,0 @@
-model:
-    train_mat_bin_path: data/mat_bin_train.npz
-    train_mat_count_path: data/mat_count_train.npz
-    eval_mat_path: data/mat_bin_validate.npz
